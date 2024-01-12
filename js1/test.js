@@ -7,3 +7,4 @@ var userAddress = "solipara";
    userEmail="nobilla@gmail.com"
 
    console.table([userId, userEmail,userAddress,userCity]);
+   console.table([userId, userEmail,userAddress,userCity]);
