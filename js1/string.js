@@ -49,3 +49,18 @@ const string_to_array = (input)=> input.trim().split(" ")
 
 console.log("qs:3")
 console.log(string_to_array("Robin Singh"));
+
+
+//qs:4 Write a JavaScript function to extract a specified number of characters from a string.
+function extract_characters(inputString, numCharacters) {
+  if (numCharacters < 0 && inputString.constructor === 'string') {
+    return "Please provide a valid positive number of characters.";
+  }
+
+  return inputString.substring(0, numCharacters);
+}
+
+// Test cas
+console.log('qs:4')
+console.log(extract_characters("Hello, World!", 5));
+// Output: "Hello"
