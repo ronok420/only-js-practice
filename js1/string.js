@@ -78,3 +78,26 @@ console.log("qs:5");
 console.log(abbrev_name("Robin Singh"));
 const sname ="Robin Singh".trim().split(" ")
 console.log(`${sname[0]} ${sname[1].charAt(0)}.`)
+
+
+
+
+
+// qs":6Write a JavaScript function that hides email addresses to prevent unauthorized access.
+
+// Test Data:
+// console.log(protect_email("robin_singh@example.com"));
+// "robin...@example.com"
+const protect_email =  (user_email) =>{
+  const splitsting = user_email.split("@");
+  let part1 =splitsting[0];
+  let avg= part1.length/2;
+ const  part1edit = part1.substring(0,avg)
+  const part2 =splitsting[1];
+  return (`${part1edit}.....@${part2}`) 
+  
+  
+  
+};
+console.log("qs:6");
+console.log(protect_email("robin_patuary@example.com"));
