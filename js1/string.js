@@ -101,3 +101,23 @@ const protect_email =  (user_email) =>{
 };
 console.log("qs:6");
 console.log(protect_email("robin_patuary@example.com"));
+
+
+
+
+//qs:7 Write a JavaScript function to parameterize a string.
+
+// Test Data:
+// console.log(string_parameterize("Robin Singh from USA."));
+// "robin-singh-from-usa"
+function string_parameterize(inputString) {
+  // Split the string based on empty spaces
+  const wordsArray = inputString.split(' ');
+
+  // Join the words with hyphens
+  return wordsArray.join('-').toLowerCase();
+}
+
+// Test case
+console.log(string_parameterize("Robin Singh  from USA."));
+// Output: "robin-singh-from-usa"
